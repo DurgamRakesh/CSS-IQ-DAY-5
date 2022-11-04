@@ -1,0 +1,126 @@
+.box-main{
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    color: white;
+    background-color: teal;
+    /* transition propertys */
+    transition: width,height;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+}
+.box-main:hover{
+    width: 300px;
+    height: 300px;
+}
+
+/* --------------------------------------------- */
+
+.trans{
+    width: 200px;
+    height: 100px;
+    background-color: coral;
+    color: white;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    transform: rotate(45deg);
+    /* some transform propertys */
+    /* transform: rotate(); 
+    transform: rotateX(); 
+    transform: rotateY(); 
+    transform: scale();
+    transform: scaleX();
+    transform: scaleY();
+    transform: skew();
+    transform: skewX();
+    transform: skewY();
+    transform: translate();
+    transform: translateX();
+    transform: translateY(); */
+}
+
+/* --------------------------------------------- */
+
+.main-div{
+    display: grid;
+    grid-template-columns: 200px 100px 200px;
+    grid-template-rows: 100px 100px 100px;
+    gap: 10px;
+}
+.items{
+    background-color: brown;
+    border: 2px solid blue;
+    text-align: center;
+    color: aliceblue;
+}
+.item1{
+    grid-column: 1/4;
+}
+.item2{
+    grid-column: 1/2;
+}
+.item3{
+    grid-column: 3/4;
+}
+.item4{
+    grid-column: 1/4;
+}
+
+/* --------------------------------------------- */
+
+/* some combinators propertys */
+/* descendent selector: */
+ /* div p{
+    background-color: blueviolet;
+} */
+/* child selector: */
+/* div > p{
+    background-color: coral;
+} */
+/* adjecent sibling selector: */
+/* div + p {
+    background-color: deeppink;
+} */
+/* general sibling selector: */
+div ~ p{
+    background-color: dodgerblue;
+}
+
+/* --------------------------------------------- */
+
+a:link{
+    color: rgb(42, 165, 159);
+}
+a:active{
+    color: rgb(42, 165, 159);
+}
+a:visited{
+    color: rgb(200, 131, 28);
+}
+.div1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.div1:hover{
+    background-color: aqua;
+}
+section p:nth-child(odd){
+    background-color: forestgreen;
+}
+
+/* some pseudo selectors propertys */
+/* :link
+:visited
+:active
+:hover
+:first-child
+:last-child
+:nth-child()
+:checked
+:disabled */
+
+
+
